@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for standard text rendering -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFix Pro | Repair Workshop Management System</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="main-header">
+        <div class="nav-container">
+            <!-- Workshop Brand / Logo -->
+            <a href="index.html" class="brand-logo">
+                <span class="logo-icon">⚙️</span>
+                <span class="logo-text">AutoFix<strong>Pro</strong></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Dashboard</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="booking.html" class="nav-link">Book Repair</a></li>
+                    <li><a href="tracking.html" class="nav-link">Track Status</a></li>
+                    <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact & FAQ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Quick Action Header Button -->
+            <div class="header-action">
+                <a href="booking.html" class="btn btn-primary btn-sm">+ New Job Card</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Smart Workshop Management</span>
+                <h1>Next-Gen Repair & Workshop Service Hub</h1>
+                <p>
+                    Streamline vehicle diagnostics, service intake, real-time job tracking,
+                    and inventory control in one unified, transparent management portal.
+                </p>
+                <div class="hero-buttons">
+                    <a href="booking.html" class="btn btn-primary">Book a Service</a>
+                    <a href="tracking.html" class="btn btn-secondary">Track Job Status</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="quick-status-widget">
+                    <div class="widget-header">
+                        <h3>Workshop Live Status</h3>
+                        <span class="live-indicator"><span class="pulse-dot"></span> Open & Operating</span>
+                    </div>
+                    <ul class="widget-list">
+                        <li>
+                            <span class="metric-label">Active Bays:</span>
+                            <strong>8 / 10 Occupied</strong>
+                        </li>
+                        <li>
+                            <span class="metric-label">Avg. Turnaround:</span>
+                            <strong>3.5 Hours</strong>
+                        </li>
+                        <li>
+                            <span class="metric-label">Lead Technician:</span>
+                            <strong>Master Tech Vikram</strong>
+                        </li>
+                        <li>
+                            <span class="metric-label">Today's Jobs:</span>
+                            <strong>24 Orders Scheduled</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KEY METRICS / STATS SECTION ==================== -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon bg-blue">🚗</div>
+                <div class="stat-details">
+                    <h3 class="stat-number">1,420+</h3>
+                    <p class="stat-title">Repairs Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon bg-orange">⏱️</div>
+                <div class="stat-details">
+                    <h3 class="stat-number">18</h3>
+                    <p class="stat-title">Vehicles In-Bay</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon bg-green">✅</div>
+                <div class="stat-details">
+                    <h3 class="stat-number">99.4%</h3>
+                    <p class="stat-title">On-Time Delivery</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon bg-purple">⭐</div>
+                <div class="stat-details">
+                    <h3 class="stat-number">4.9 / 5</h3>
+                    <p class="stat-title">Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MAIN CONTENT: LIVE WORK ORDER TABLE ==================== -->
+    <main class="main-content">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2>Live Work Orders & Bay Management</h2>
+                    <p>Real-time status of customer vehicles currently being serviced in the workshop.</p>
+                </div>
+                <a href="booking.html" class="btn btn-outline">+ Create Work Order</a>
+            </div>
+
+            <!-- Table Wrapper for Responsive Scrolling on mobile devices -->
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Customer Name</th>
+                            <th>Vehicle Model</th>
+                            <th>Service Category</th>
+                            <th>Assigned Bay / Tech</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>#FIX-1048</strong></td>
+                            <td>Rajesh Sharma</td>
+                            <td>Hyundai Creta (2022)</td>
+                            <td>Complete Brake Overhaul</td>
+                            <td>Bay 01 - Vikram S.</td>
+                            <td><span class="badge badge-warning">In Progress</span></td>
+                            <td><a href="tracking.html" class="table-link">View Tracker</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#FIX-1049</strong></td>
+                            <td>Ananya Roy</td>
+                            <td>Honda City i-VTEC</td>
+                            <td>Periodic Maintenance (30k)</td>
+                            <td>Bay 03 - Arjun M.</td>
+                            <td><span class="badge badge-info">Quality Testing</span></td>
+                            <td><a href="tracking.html" class="table-link">View Tracker</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#FIX-1050</strong></td>
+                            <td>Karan Verma</td>
+                            <td>Royal Enfield Classic 350</td>
+                            <td>Engine Oil & Filter Flush</td>
+                            <td>Bay 05 - Deepak K.</td>
+                            <td><span class="badge badge-success">Ready for Pickup</span></td>
+                            <td><a href="tracking.html" class="table-link">View Tracker</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#FIX-1051</strong></td>
+                            <td>Pooja Patel</td>
+                            <td>Tata Nexon EV</td>
+                            <td>Battery & Electrical Diagnostic</td>
+                            <td>Bay 02 - Amit R.</td>
+                            <td><span class="badge badge-pending">Inspection Pending</span></td>
+                            <td><a href="tracking.html" class="table-link">View Tracker</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#FIX-1052</strong></td>
+                            <td>Manish Gupta</td>
+                            <td>Maruti Suzuki Swift</td>
+                            <td>AC Compressor & Gas Refill</td>
+                            <td>Bay 04 - Rahul P.</td>
+                            <td><span class="badge badge-warning">In Progress</span></td>
+                            <td><a href="tracking.html" class="table-link">View Tracker</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== WORKSHOP MODULES / QUICK ACCESS ==================== -->
+    <section class="modules-section">
+        <div class="container">
+            <div class="section-title-center">
+                <h2>Workshop Management Modules</h2>
+                <p>Everything you need to operate a modern, efficient automotive service center.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Customer Service Intake</h3>
+                    <p>Digital booking intake form capturing complete vehicle symptoms, customer data, and priority flags.</p>
+                    <a href="booking.html" class="feature-link">Open Booking Form &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Real-time Job Tracking</h3>
+                    <p>Milestone-by-milestone progress bar so customers and managers know exact repair stages.</p>
+                    <a href="tracking.html" class="feature-link">View Live Tracker &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Spare Parts & Inventory</h3>
+                    <p>Monitor warehouse stocks, SKU parts, minimum thresholds, and replenishment costs.</p>
+                    <a href="inventory.html" class="feature-link">Manage Inventory &rarr;</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Service & Price Catalog</h3>
+                    <p>Pre-configured standard repair packages with transparent labor rates and part warranties.</p>
+                    <a href="services.html" class="feature-link">Explore Services &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand-logo footer-logo">
+                    <span class="logo-icon">⚙️</span>
+                    <span class="logo-text">AutoFix<strong>Pro</strong></span>
+                </div>
+                <p class="footer-desc">
+                    A comprehensive, modern Repair Workshop Management System developed for
+                    college Internet Programming evaluation.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Dashboard Overview</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="booking.html">Book Repair Job</a></li>
+                    <li><a href="tracking.html">Track Order Status</a></li>
+                    <li><a href="inventory.html">Parts Inventory</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Workshop Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                <p>Saturday: 9:00 AM - 5:00 PM</p>
+                <p>Sunday: Emergency Bay Only</p>
+                <p class="emergency-badge">24/7 Breakdown Assistance</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Academic Details</h4>
+                <p><strong>Course:</strong> Internet Programming (CSE)</p>
+                <p><strong>Technology:</strong> HTML5 & Pure CSS3</p>
+                <p><strong>Developed by:</strong> Ritish Rajput</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 AutoFix Pro Workshop Management System. Built with semantic HTML & CSS.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
