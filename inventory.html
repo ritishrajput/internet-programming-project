@@ -3,295 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory & Spare Parts | AutoFix Pro Workshop</title>
+    <title>Spare Parts Inventory | AutoFix Workshop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ==================== HEADER & NAVIGATION ==================== -->
-    <header class="main-header">
-        <div class="nav-container">
-            <a href="index.html" class="brand-logo">
-                <span class="logo-icon">⚙️</span>
-                <span class="logo-text">AutoFix<strong>Pro</strong></span>
-            </a>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Dashboard</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="booking.html" class="nav-link">Book Repair</a></li>
-                    <li><a href="tracking.html" class="nav-link">Track Status</a></li>
-                    <li><a href="inventory.html" class="nav-link active">Inventory</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact & FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-action">
-                <a href="booking.html" class="btn btn-primary btn-sm">+ New Job Card</a>
-            </div>
-        </div>
+    <!-- Header -->
+    <header>
+        <h1>AutoFix Repair Workshop</h1>
+        <p>Complete Vehicle Repair and Maintenance Management System</p>
     </header>
 
-    <!-- ==================== PAGE BANNER ==================== -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Workshop Parts & Inventory Management</h1>
-            <p>Real-time telemetry of automotive consumables, OEM replacement components, lubricants, and reorder levels.</p>
-        </div>
-    </section>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Prices</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+            <li><a href="inventory.html" class="active">Spare Parts</a></li>
+            <li><a href="tracking.html">Track Status</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
-    <main class="main-content">
-        <div class="container">
+    <!-- Main Content -->
+    <div class="container">
 
-            <!-- INVENTORY STATS CARDS -->
-            <div class="stats-grid mb-4">
-                <div class="stat-card">
-                    <div class="stat-icon bg-blue">📦</div>
-                    <div class="stat-details">
-                        <h3 class="stat-number">1,840</h3>
-                        <p class="stat-title">Total Active SKUs</p>
-                    </div>
-                </div>
+        <!-- Inventory Table Card -->
+        <div class="card">
+            <h2>Workshop Spare Parts Inventory</h2>
+            <p>Current stock of spare parts and consumables available in our workshop storage:</p>
 
-                <div class="stat-card">
-                    <div class="stat-icon bg-green">💰</div>
-                    <div class="stat-details">
-                        <h3 class="stat-number">&#8377;14.8L</h3>
-                        <p class="stat-title">Warehouse Valuation</p>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon bg-orange">⚠️</div>
-                    <div class="stat-details">
-                        <h3 class="stat-number">4 Items</h3>
-                        <p class="stat-title">Low Stock Alert</p>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon bg-purple">🚚</div>
-                    <div class="stat-details">
-                        <h3 class="stat-number">6 Orders</h3>
-                        <p class="stat-title">Shipments Dispatched</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TABLE OF SPARE PARTS -->
-            <div class="section-header">
-                <div>
-                    <h2>Live Warehouse Stock Ledger</h2>
-                    <p>Current balance of critical spare parts across all mechanical service bays.</p>
-                </div>
-                <div class="header-actions">
-                    <a href="#add-part-section" class="btn btn-primary btn-sm">+ Register New Part</a>
-                </div>
-            </div>
-
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Part SKU</th>
-                            <th>Item Description</th>
-                            <th>Category</th>
-                            <th>Stock Count</th>
-                            <th>Min. Threshold</th>
-                            <th>Unit Price</th>
-                            <th>Stock Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><code>SKU-BRK-092</code></td>
-                            <td>Front Ceramic Brake Pads (Hyundai/Kia)</td>
-                            <td>Braking Systems</td>
-                            <td><strong>24 Sets</strong></td>
-                            <td>10 Sets</td>
-                            <td>&#8377;1,850.00</td>
-                            <td><span class="badge badge-success">In Stock</span></td>
-                            <td><button type="button" class="btn-action">Reorder</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-OIL-5W30</code></td>
-                            <td>Fully Synthetic 5W-30 Motor Oil (4L)</td>
-                            <td>Lubricants & Fluids</td>
-                            <td><strong>42 Cans</strong></td>
-                            <td>15 Cans</td>
-                            <td>&#8377;2,200.00</td>
-                            <td><span class="badge badge-success">In Stock</span></td>
-                            <td><button type="button" class="btn-action">Reorder</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-FLT-A014</code></td>
-                            <td>High-Flow Cabin Air Microfilter</td>
-                            <td>Filters</td>
-                            <td><strong>3 Units</strong></td>
-                            <td>8 Units</td>
-                            <td>&#8377;650.00</td>
-                            <td><span class="badge badge-warning">Low Stock</span></td>
-                            <td><button type="button" class="btn-action urgent">Urgent Restock</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-BAT-12V65</code></td>
-                            <td>12V 65Ah Maintenance-Free Battery</td>
-                            <td>Electrical</td>
-                            <td><strong>8 Units</strong></td>
-                            <td>5 Units</td>
-                            <td>&#8377;5,400.00</td>
-                            <td><span class="badge badge-success">In Stock</span></td>
-                            <td><button type="button" class="btn-action">Reorder</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-CLT-7889</code></td>
-                            <td>Clutch Friction Disc & Release Bearing</td>
-                            <td>Drivetrain</td>
-                            <td><strong>0 Units</strong></td>
-                            <td>4 Units</td>
-                            <td>&#8377;3,800.00</td>
-                            <td><span class="badge badge-danger">Out of Stock</span></td>
-                            <td><button type="button" class="btn-action urgent">Dispatched (PO #41)</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-SPK-NGK4</code></td>
-                            <td>Iridium Performance Spark Plugs (Pack of 4)</td>
-                            <td>Ignition System</td>
-                            <td><strong>16 Packs</strong></td>
-                            <td>6 Packs</td>
-                            <td>&#8377;1,400.00</td>
-                            <td><span class="badge badge-success">In Stock</span></td>
-                            <td><button type="button" class="btn-action">Reorder</button></td>
-                        </tr>
-                        <tr>
-                            <td><code>SKU-REF-R134</code></td>
-                            <td>R-134a AC Refrigerant Cylinder (13.6 kg)</td>
-                            <td>HVAC / AC</td>
-                            <td><strong>2 Tanks</strong></td>
-                            <td>3 Tanks</td>
-                            <td>&#8377;6,900.00</td>
-                            <td><span class="badge badge-warning">Low Stock</span></td>
-                            <td><button type="button" class="btn-action urgent">Restock</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- ADD NEW INVENTORY ITEM FORM -->
-            <div id="add-part-section" class="form-card mt-5">
-                <div class="form-header">
-                    <h2>Stock Intake / Register New Spare Part</h2>
-                    <p class="form-subtext">Add newly delivered inventory into the central workshop warehouse management system.</p>
-                </div>
-
-                <form action="inventory.html" method="GET" class="repair-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="sku-code">Part SKU Code <span class="required-star">*</span></label>
-                            <input type="text" id="sku-code" name="skuCode" placeholder="e.g. SKU-ENG-9901" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="part-name">Part Name & Specification <span class="required-star">*</span></label>
-                            <input type="text" id="part-name" name="partName" placeholder="e.g. Bosch Fuel Filter Assembly" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="part-category">Component Category <span class="required-star">*</span></label>
-                            <select id="part-category" name="partCategory" required>
-                                <option value="" disabled selected>-- Select Category --</option>
-                                <option value="brakes">Brakes & Hydraulics</option>
-                                <option value="engine">Engine & Mechanical</option>
-                                <option value="electrical">Electrical & Batteries</option>
-                                <option value="fluids">Fluids & Lubricants</option>
-                                <option value="suspension">Suspension & Steering</option>
-                                <option value="filters">Air, Oil & Fuel Filters</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="supplier">Supplier / OEM Distributor <span class="required-star">*</span></label>
-                            <input type="text" id="supplier" name="supplier" placeholder="e.g. Bosch Auto Parts India" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="qty-received">Initial Quantity Received <span class="required-star">*</span></label>
-                            <input type="number" id="qty-received" name="quantity" min="1" max="1000" placeholder="e.g. 20" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="min-threshold">Reorder Safety Level <span class="required-star">*</span></label>
-                            <input type="number" id="min-threshold" name="minThreshold" min="1" max="100" placeholder="e.g. 5" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="unit-price">Unit Cost Price (&#8377;) <span class="required-star">*</span></label>
-                            <input type="number" id="unit-price" name="unitPrice" min="1" step="0.5" placeholder="e.g. 1250" required>
-                        </div>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Save to Inventory Database</button>
-                        <button type="reset" class="btn btn-secondary">Reset Fields</button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <div class="brand-logo footer-logo">
-                    <span class="logo-icon">⚙️</span>
-                    <span class="logo-text">AutoFix<strong>Pro</strong></span>
-                </div>
-                <p class="footer-desc">
-                    A comprehensive, modern Repair Workshop Management System developed for
-                    college Internet Programming evaluation.
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Quick Navigation</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Dashboard Overview</a></li>
-                    <li><a href="services.html">Services & Pricing</a></li>
-                    <li><a href="booking.html">Book Repair Job</a></li>
-                    <li><a href="tracking.html">Track Order Status</a></li>
-                    <li><a href="inventory.html">Parts Inventory</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Workshop Hours</h4>
-                <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
-                <p>Saturday: 9:00 AM - 5:00 PM</p>
-                <p>Sunday: Emergency Bay Only</p>
-                <p class="emergency-badge">24/7 Breakdown Assistance</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Academic Details</h4>
-                <p><strong>Course:</strong> Internet Programming (CSE)</p>
-                <p><strong>Technology:</strong> HTML5 & Pure CSS3</p>
-                <p><strong>Developed by:</strong> Ritish Rajput</p>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Part ID</th>
+                        <th>Part Name</th>
+                        <th>Category</th>
+                        <th>Quantity in Stock</th>
+                        <th>Unit Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P-101</td>
+                        <td>Synthetic Engine Oil (5W-30, 4L)</td>
+                        <td>Fluids & Oils</td>
+                        <td>25 Cans</td>
+                        <td>&#8377;2,100</td>
+                        <td><span class="badge badge-green">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-102</td>
+                        <td>Front Brake Pads (Set)</td>
+                        <td>Brakes</td>
+                        <td>12 Sets</td>
+                        <td>&#8377;1,250</td>
+                        <td><span class="badge badge-green">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-103</td>
+                        <td>Engine Air Filter</td>
+                        <td>Filters</td>
+                        <td>3 Units</td>
+                        <td>&#8377;450</td>
+                        <td><span class="badge badge-orange">Low Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-104</td>
+                        <td>12V 45Ah Car Battery</td>
+                        <td>Electrical</td>
+                        <td>6 Units</td>
+                        <td>&#8377;4,200</td>
+                        <td><span class="badge badge-green">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-105</td>
+                        <td>Spark Plugs (Pack of 4)</td>
+                        <td>Ignition</td>
+                        <td>15 Packs</td>
+                        <td>&#8377;800</td>
+                        <td><span class="badge badge-green">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-106</td>
+                        <td>AC Refrigerant Gas (Can)</td>
+                        <td>AC & Cooling</td>
+                        <td>0 Units</td>
+                        <td>&#8377;1,200</td>
+                        <td><span class="badge badge-red">Out of Stock</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 AutoFix Pro Workshop Management System. Built with semantic HTML & CSS.</p>
-            </div>
+        <!-- Request Part Form Card -->
+        <div class="card">
+            <h2>Order / Request Spare Part</h2>
+            <p>If a required part is low in stock or out of stock, submit a request below:</p>
+
+            <form action="inventory.html" method="GET">
+                <div class="form-group">
+                    <label for="partname">Part Name / Model:</label>
+                    <input type="text" id="partname" name="partName" placeholder="e.g. Bosch Oil Filter" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="partCategory" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="brakes">Brakes & Hydraulics</option>
+                        <option value="fluids">Fluids & Lubricants</option>
+                        <option value="electrical">Electrical & Battery</option>
+                        <option value="engine">Engine Parts</option>
+                        <option value="filters">Filters</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity Needed:</label>
+                    <input type="number" id="quantity" name="qty" min="1" max="50" placeholder="e.g. 5" required>
+                </div>
+
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
         </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AutoFix Repair Workshop Management System</p>
+        <p>Internet Programming Project | Developed by Ritish Rajput</p>
     </footer>
 
 </body>

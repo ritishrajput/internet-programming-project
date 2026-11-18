@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Repair Status | AutoFix Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>AutoFix Repair Workshop</h1>
+        <p>Complete Vehicle Repair and Maintenance Management System</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Prices</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+            <li><a href="inventory.html">Spare Parts</a></li>
+            <li><a href="tracking.html" class="active">Track Status</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Search Job ID Card -->
+        <div class="card">
+            <h2>Check Your Repair Status</h2>
+            <p>Enter your 3-digit Job ID provided at the time of vehicle drop-off:</p>
+
+            <form action="tracking.html" method="GET">
+                <div class="form-group">
+                    <label for="jobid">Job ID Number:</label>
+                    <input type="text" id="jobid" name="jobId" value="101" placeholder="e.g. 101, 102, 103" required>
+                </div>
+                <button type="submit" class="btn">Check Status</button>
+            </form>
+        </div>
+
+        <!-- Job Details Card -->
+        <div class="card">
+            <h2>Job Status Details: #101</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Customer Name:</strong></td>
+                        <td>Rajesh Kumar</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vehicle Model:</strong></td>
+                        <td>Hyundai Creta (PB-08-AB-1234)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Service Type:</strong></td>
+                        <td>Brake Pad Replacement & Inspection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assigned Mechanic:</strong></td>
+                        <td>Vikram Singh</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Current Status:</strong></td>
+                        <td><span class="badge badge-orange">In Progress (Bay 01)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estimated Completion:</strong></td>
+                        <td>Today by 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estimated Cost:</strong></td>
+                        <td>&#8377;1,499 (Parts + Labor)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Help Info Card -->
+        <div class="card">
+            <h2>Need an Update?</h2>
+            <p>If you have any questions regarding your vehicle or need to authorize additional repairs, please call our workshop desk directly at <strong>+91 98765 43210</strong>.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AutoFix Repair Workshop Management System</p>
+        <p>Internet Programming Project | Developed by Ritish Rajput</p>
+    </footer>
+
+</body>
+</html>

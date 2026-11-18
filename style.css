@@ -1,0 +1,245 @@
+/* =========================================
+   Workshop Management System - style.css
+   Basic HTML & CSS College Project
+   ========================================= */
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #d9e6f2;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222222;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #004080;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 25px auto;
+}
+
+/* Content Cards */
+.card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #004080;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.card h3 {
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Grid for feature boxes */
+.grid-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.grid-item h3 {
+    color: #004080;
+    margin-bottom: 6px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 9px 10px;
+    background-color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Status Badges */
+.badge {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-green { background-color: #28a745; }
+.badge-orange { background-color: #fd7e14; }
+.badge-red { background-color: #dc3545; }
+.badge-blue { background-color: #007bff; }
+
+/* Forms */
+form {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    background-color: #004080;
+    color: white;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #002b55;
+}
+
+.btn-secondary {
+    background-color: #666666;
+}
+
+.btn-secondary:hover {
+    background-color: #444444;
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid-container {
+        flex-direction: column;
+    }
+}
